@@ -104,11 +104,11 @@ body{
     border-radius: 10px;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    
 }
 
 .navegador > li > a{
-    display: block;
+    display: flex;
     padding: 15px 20px;
     color: #111;
     text-decoration: none;
@@ -116,7 +116,12 @@ body{
     font-weight: 600;
     color: var(--black3);
     transition: 0.3s ease;
+    align-items: center;
 }
+
+
+
+
 
 
 
