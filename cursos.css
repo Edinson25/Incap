@@ -43,6 +43,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    padding: -5px 80px;
     width: 100%;
     transition: 0.5s;
     background: var(--blue);
@@ -52,7 +53,7 @@ header{
 
 header.sticky{
     background: #fff;
-    padding: 10px 100px;
+    
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -263,6 +264,8 @@ header.sticky{
     width: 48%;
 }
 
+
+
 .Titulo-texto{
     font-size: 2em;
     color: #111;
@@ -324,7 +327,7 @@ header.sticky{
 }
 
 .shop{
-    margin-top: 2rem;
+    margin-top: -6rem;
 }
 
 /* contenido */
@@ -397,14 +400,15 @@ margin-bottom: 0.5rem;
 
 
 
-@media (max-width:1080px){
+@media (max-width:991px){
     .nav{
         padding:15px;
     }
 
-    section {
+    
+    /* section {
         padding:3rem 0 2rem;
-    }
+    } */
 
     .container {
         margin: 0 auto;
@@ -418,9 +422,49 @@ margin-bottom: 0.5rem;
     .navegador{
         display: none;
     }
+
+    .row {
+        flex-direction: column;
+        
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        
+        height: 300px;
+        
+    }
+
+    .shop {
+        margin-top: -6rem !important;
+    }
+
+    .row .col50 .imgBx{
+        margin-top: 20px;
+    }   
+
+    
+
+    .nosotros {
+        padding: 27px;
+        margin-top: -10%;
+    }
+
+    .row .col50 .imgBx img{
+        object-fit: contain;
+}
 }
 
 @media (max-width:400px){
+
+    .nosotros {
+        padding: 27px;
+        margin-top: -35%;
+    }
     .nav{
         padding: 11px;
     }
@@ -435,6 +479,26 @@ margin-bottom: 0.5rem;
 
     .navegador{
         display: none;
+    }
+
+    .row {
+        flex-direction: column;
+        
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        
+        height: 300px;
+        
+    }
+
+    .shop {
+        margin-top: -6rem !important;
     }
 
 

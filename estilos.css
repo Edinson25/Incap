@@ -74,7 +74,7 @@ body{
 
 .header.sticky{
     background: #fff;
-    padding: 10px 100px;
+    padding: 0px 80px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -401,6 +401,12 @@ footer a{
 
 footer .redes{
     margin-top: 20px;
+    
+}
+
+footer .redes h4{
+    margin-left: 0;
+    display: flex;
 }
 
 footer .redes ion-icon{
@@ -428,6 +434,11 @@ footer .copy{
     text-align: center;
 }
 
+footer .copy p span{
+    font-weight: 700;
+}
+
+
 /* footer . */
 
 @media (max-width:1325px){
@@ -449,6 +460,25 @@ footer .copy{
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     }
     
+}
+
+@media(max-width:991px){
+
+
+    .beneficios h2{
+        font-size: 2em;
+    }
+    .header.sticky{
+        background: #fff;
+        padding: 0px 0px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    footer .install .row{
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
